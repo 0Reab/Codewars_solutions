@@ -47,5 +47,5 @@ def diamond(n):
         space = (n - num) // 2
         lst.append(space *' '+'*' * num + '\n')
 
-    lst = lst + lst[:-1][::-1]
+    lst += lst[:-1][::-1]
     return ''.join(lst)
