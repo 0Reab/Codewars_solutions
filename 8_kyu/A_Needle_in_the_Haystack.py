@@ -16,9 +16,4 @@ After your function finds the needle it should return a message (as a string) th
 '''
 
 def find_needle(haystack):
-    count = 0
-    for i in haystack:
-        count = count + 1
-        if i == "needle":
-
-            return f'found the needle at position {count-1}'
+    return f'found the needle at position {haystack.index("needle")}'
