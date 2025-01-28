@@ -22,9 +22,4 @@ Write your result to `initials`, and return that buffer.
 '''
 
 def abbrev_name(name):
-    name = name.upper()
-    first = name[0]
-    striped = name.split()[-1]
-    second = striped[0]
-
-    return first + "." + second
+    return f'{name[0].upper()}.{name.split()[-1][0].upper()}'

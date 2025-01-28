@@ -23,12 +23,8 @@ def parse(data):
     start = 0
     for cmd in data:
         match cmd:
-            case 'i':
-                start += 1
-            case 'd':
-                start -= 1
-            case 's':
-                start = start**2
-            case 'o':
-                lst.append(start)
+            case 'i': start += 1
+            case 'd': start -= 1
+            case 's': start = start**2
+            case 'o': lst.append(start)
     return lst

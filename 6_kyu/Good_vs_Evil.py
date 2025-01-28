@@ -67,5 +67,5 @@ def good_vs_evil(good, evil):
         return "Battle Result: Good triumphs over Evil"
     if good_sum < evil_sum:
         return "Battle Result: Evil eradicates all trace of Good"
-    else:
-        return "Battle Result: No victor on this battle field"
+
+    return "Battle Result: No victor on this battle field"

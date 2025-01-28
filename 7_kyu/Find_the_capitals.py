@@ -11,12 +11,4 @@ Write a function that takes a single non-empty string of only lowercase and uppe
 '''
 
 def capitals(word):
-    count = -1
-    result = []
-
-    for i in word:
-        count += 1
-
-        if i == i.upper():
-            result.append(count)
-    return result
+    return [idx for idx, char in enumerate(word) if char.isupper()]
