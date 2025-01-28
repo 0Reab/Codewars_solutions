@@ -16,9 +16,4 @@ Complete the function to return `true` if the two arguments given are anagrams o
 
 # write the function is_anagram
 def is_anagram(test, original):
-    test = test.lower()
-    original = original.lower()
-    if sorted(test) == sorted(original):
-        return True
-    else:
-        return False
+    return sorted(test.lower()) == sorted(original.lower())
