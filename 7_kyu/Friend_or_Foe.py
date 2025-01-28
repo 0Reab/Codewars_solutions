@@ -17,8 +17,4 @@ Note: keep the original order of the names in the output.
 '''
 
 def friend(x):
-    lst = []
-    for i in x:
-        if len(i) == 4:
-            lst.append(i)
-    return lst
+    return [name for name in x if len(name) == 4]
