@@ -25,18 +25,11 @@ dnaStrand [A,A,A,A] `shouldBe` [T,T,T,T]
 '''
 
 def DNA_strand(dna):
+    hashmap = {
+        'A': 'T',
+        'T': 'A',
+        'C': 'G',
+        'G': 'C'
+    }
 
-    st = ''
-
-    for i in dna:
-        if i == 'A':
-            st += 'T'
-        elif i == 'T':
-            st += 'A'
-        elif i == 'C':
-            st += 'G'
-        elif i == 'G':
-            st += 'C'
-
-    return st
-
+    return ''.join(hashmap[key] for key in dna)
